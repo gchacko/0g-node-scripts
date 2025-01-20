@@ -1,0 +1,57 @@
+{
+	"name": "0g-node-sample-scripts",
+	"version": "1.0.0",
+	"description": "Several sample Node.js scripts that interact with 0G Labs services",
+	"main": "hello-decentralized-storage.js",
+	"scripts": {
+		"start": "node hello-decentralized-storage.js",
+		"dev": "node hello-decentralized-storage.js",
+		"lint": "eslint . --ext .js",
+		"test": "echo \"No test specified\" && exit 0"
+	},
+	"keywords": [
+		"0G",
+		"javascript",
+		"decentralized",
+		"llm",
+		"sdk",
+		"blockchain"
+	],
+	"author": "Your Name",
+	"license": "MIT",
+	"dependencies": {
+		"@0glabs/0g-serving-broker": "^0.1.0",
+		"@0glabs/0g-ts-sdk": "file:/Users/hummusonrails/Dev/0g/0g-ts-sdk",
+		"@types/crypto-js": "4.2.2",
+		"crypto-js": "4.2.0",
+		"dotenv": "^16.4.7",
+		"ethers": "^6.13.5",
+		"node-fetch": "^3.3.2"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.7.0",
+		"@typescript-eslint/parser": "^6.7.0",
+		"eslint": "^8.51.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.7.3"
+	},
+	"eslintConfig": {
+		"env": {
+			"node": true,
+			"es2021": true
+		},
+		"parser": "@typescript-eslint/parser",
+		"extends": [
+			"eslint:recommended",
+			"plugin:@typescript-eslint/recommended"
+		],
+		"parserOptions": {
+			"ecmaVersion": 12,
+			"sourceType": "module"
+		},
+		"rules": {
+			"@typescript-eslint/no-unused-vars": "warn",
+			"@typescript-eslint/explicit-module-boundary-types": "off"
+		}
+	}
+}
